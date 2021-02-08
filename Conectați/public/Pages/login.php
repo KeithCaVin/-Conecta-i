@@ -14,7 +14,7 @@
         <header><p>Conectați</p></header>
         <a href="../index.php">Sign-up</a>
     </div>
-
+    <!----------- THIS IS FOR LOG IN FUNCTION --------------->
     <div class="login-main-container">
         <div class="login-form-container">
             <h1>Log-in</h1>
