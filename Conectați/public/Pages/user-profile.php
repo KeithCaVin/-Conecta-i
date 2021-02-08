@@ -107,7 +107,7 @@ if(isset($_POST['submit-comment'])){
                     ?>
                 </div>
             </div>
-      
+      <!--------------THIS FUNCTION WILL DISPLAY THE USER'S PROFILE ----------->
             <?php
                 $sqlPost= "SELECT * FROM `user_upload` WHERE `user_upload`.`user_Id`=". $_SESSION["userid"]." ORDER BY `user_upload`.`upload_time` DESC";
                 $showPostQuery=mysqli_query($conn, $sqlPost);
