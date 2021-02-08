@@ -64,15 +64,16 @@
 
 
     <!-------------Page Content Container------------------>
+    <!-------------THIS CONTAINER WILL DISPLAY THE PEOPLE THE USER IS FOLLOWING------------------>
     <div class="user-connection-container">
         <div class="user-connection-list">
             <h1>Connections</h1>
             
+            <!-------------THIS FUNCTION WILL DISPLAY THE PEOPLE THE USER IS FOLLOWING------------------>
             <?php 
                 $query= "SELECT signup_database.user_full_name, signup_database.user_profile_picture, signup_database.user_Id
                  FROM signup_database INNER JOIN tbl_follow ON signup_database.user_Id = tbl_follow.receiver_Id 
-                WHERE sender_Id =".$_SESSION['userid']."
-                ";
+                 WHERE sender_Id =".$_SESSION['userid']."";
                 $queryResult=mysqli_query($conn,$query);
                 $queryResultCheck= mysqli_num_rows($queryResult);
 
@@ -80,17 +81,13 @@
                     while($followRow=mysqli_fetch_assoc($queryResult)){
                         echo "
                             <div class='user-connection-list-container'>
-                            <img src='../../private/ProfilePics/".$followRow['user_profile_picture']."' height='50px' width='50px'>
-                            <p><a href='other-user-profile.php?othersUserId=".$followRow['user_Id']."'>".$followRow['user_full_name']."</a></p>
-                            
+                                <img src='../../private/ProfilePics/".$followRow['user_profile_picture']."' height='50px' width='50px'>
+                                <p><a href='other-user-profile.php?othersUserId=".$followRow['user_Id']."'>".$followRow['user_full_name']."</a></p>
                             </div>
                         ";
                     }
                 }
-            ?>
-           
-            
-            
+            ?>    
         </div>
 
         
@@ -101,6 +98,7 @@
                     <button type="submit" name="search-user-btn">Search</button>
                 </form> 
             </div>
+            <!-------------THIS FUNCTION WILL SEARCH USERS THAT REGISTERED IN THE WEBSITE------------------>
             <?php
                 if(isset($_POST['search-user-btn'])){
                     $searchUserName=mysqli_real_escape_string($conn,$_POST['search-users']);
