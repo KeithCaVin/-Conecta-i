@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="SCSS/Main.css">
 </head>
 <body>
+    <!--------------THIS IS FOR THE SIGN UP PAGE------------------->
     <div class="signup-header-container">
         <header><p>Conectați</p></header>
         <a href="Pages/login.php">Log-in</a>
