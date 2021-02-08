@@ -1,0 +1,237 @@
+.user-page-profile-container{
+    position: relative;
+    left: 300px;
+    top: 80px;
+    z-index: 100;
+    width: 800px;
+    min-height: 500px;
+
+    .user-page-profile-inner-container{
+        font-family: "Garamond";
+        width: 100%;
+        
+        position: relative;
+        min-height: 500px;
+        .user-page-profile-header{
+            border-bottom: solid rgb(211, 211, 211) 1px;
+            height:155px;
+            display: flex;
+            flex-direction: column;
+            background-color: #3b697c;
+
+            .user-page-profile-header-pfp{
+                margin-left: auto;
+                margin-right: auto;
+                height: 70px;
+                width: 70px;
+                margin-top: 20px;
+                
+                background-color: white;
+                
+            }
+            .user-page-profile-header-name{
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 30px;
+                
+            }
+        }
+
+        .user-profile-posts{
+            border: solid  #9dbcc9 1px;
+            box-shadow: 1px 1px 10px  #9dbcc9;
+            border-radius: 5px;
+            width: 90%;
+            margin-left: 40px;
+            margin-right: 40px;
+            min-height:300px;
+            margin-top: 20px;
+            .user-profile-posts-header{
+                width: 100%;
+                background-color: #9dbcc9 ;
+                height: 70px;
+            }
+            .user-profile-post-pfp{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                margin-top: 10px;
+                margin-left: 10px;
+                background-color:  orange;
+            }
+            .user-profile-post-name{
+                position: relative;
+                margin-left: 70px;
+                top: 20px;
+            }
+            
+            .user-profile-post-delete-or-edit{
+                width: 15px;
+                height: 15px;
+                float: right;
+                margin-right: 20px;
+                margin-top: -5px;
+                display: flex;
+                flex-direction: row-reverse;
+                
+                button{
+                    height: 21px;
+                    border-radius: 5px;
+                    margin:5px;
+                    background-color: white;
+                    z-index: 200;
+                }
+                
+            }
+            .user-profile-post-contents{
+                .user-profile-post-content-img{
+                    margin-top: 50px;
+                    margin-left: 60px;
+                    
+                }
+                .user-profile-post-content-text{
+                    width: 90%;
+                  
+                    min-height: 40px;
+                    background-color: white;
+                    top: 20px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+
+                    p{
+                       
+                        margin-top: 5px;
+                        font-size: 20px;
+                    }
+                    .show_time{
+                        font-size: 15px;
+                        font-style: italic;
+                    }
+                }
+                .line1{
+                    width: 90%;
+                    position: relative;
+                    height: 4px;
+                    background-color: gray;
+                    border-radius: 10px;
+                    opacity: 0.4;
+                    top:80px;
+                    left: 40px;
+                }
+                .line2{
+                    width: 90%;
+                    position: relative;
+                    height: 4px;
+                    background-color: gray;
+                    border-radius: 10px;
+                    opacity: 0.4;
+                    top:120px;
+                    left: 40px;
+                }
+                .user-profile-post-likes-and-comments{
+                    margin-top: 85px;
+                    
+                    .like-btn{
+                        position: absolute;
+                        left: 100px;
+                    }
+                    .comments{
+                        position: absolute;
+                        left: 650px;
+                    }
+                }
+            }
+            
+            .user-profile-post-upload-comments{
+                width: 100%;
+                margin-top: 140px;
+                .user-profile-post-upload-comments-pfp{
+                    height: 30px;
+                    width: 30px;
+                    background-color: purple;
+                    margin-left: 30px;
+                }
+                .user-profile-post-upload-comments-input{
+                    margin-left: 70px;
+                    input{
+                        width: 600px;
+                    }
+                }
+                .user-profile-post-upload-comments-submit{
+                    margin-top: 10px;
+                    margin-left: 620px;
+                }
+                .user-profile-post-upload-comments-name{
+                    margin-left: 70px;
+                    margin-top: -25px;
+                    margin-bottom: 20px;
+                }
+            }
+            .user-profile-post-friend-comments{
+                width: 90%;
+                margin-top: 20px;
+                border-top: solid rgb(235, 235, 235) 1px;
+                padding-top: 10px;
+                margin-left: 30px;
+                
+                .user-profile-post-friend-comments-pfp{
+                    height: 30px;
+                    width: 30px;
+                    background-color: rgb(228, 123, 141);
+                    margin-left: 30px;
+                }
+                .user-profile-post-friend-comment-name{
+                    margin-left: 70px;
+                    margin-top: -25px;
+                    margin-bottom: 20px;
+                }
+                .user-profile-delete-comment{
+                    margin-left: 650px;
+                    margin-top: -40px;
+                }
+                .user-profile-post-friend-comment-content{
+                    width: 90%;
+                    min-height: 40px;
+                    margin-left: 40px;
+                    margin-right: 20px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    background-color: white;
+                  
+                    padding-bottom: 10px;
+                }
+                
+            }
+        }
+    }
+}
+
+.form-container{
+    background-color: red;
+    form{
+        position: absolute;
+        top: 40%;
+        left:30%;
+        button{
+            position: absolute;
+            top: 100px;
+            left: 270px;
+            background-color:#6090A8;
+            border-radius:5px;
+            border-style: none;
+            cursor:pointer;
+            color:white;
+            font-family: 'Garamond';
+            font-size:15px;
+            padding:6px 24px;
+            text-decoration:none;
+           
+        }
+        button:hover{
+            
+            background-color:#a6beca;
+          
+           
+        }
+    }
+}

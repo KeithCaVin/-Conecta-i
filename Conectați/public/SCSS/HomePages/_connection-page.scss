@@ -1,0 +1,66 @@
+.user-connection-container{
+    position: relative;
+    margin-left: 300px;
+    top: 100px;
+    display: flex;
+
+
+    h1{
+        font-family: 'Garamond';
+        font-size: 50px;
+
+    }
+    .user-connection-list{
+        flex-grow: 2;
+        border-right: solid black 1px;
+
+        .user-connection-list-container{
+            margin-top: 20px;
+            display: flex;
+            margin-left: 10px;
+            p{
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+
+
+    .user-connection-search{
+        padding-left: 10px;
+        flex-grow: 2;
+        .user-connection-search-container{
+            input{
+                border-radius: 10px;
+                margin-top: 20px;
+                height: 25px;
+                width: 200px;
+            }
+            button{
+                background-color:#6090A8;
+                border-radius:5px;
+                border-style: none;
+                cursor:pointer;
+                color:white;
+                font-family: 'Garamond';
+                font-size:15px;
+                padding:6px 24px;
+                text-decoration:none;
+                margin-left: 10px;
+            }
+            button:hover{
+                background-color: #89b2c7;
+            }
+        }
+    }
+
+    .user-connection-searched-user{
+        margin-top: 30px;
+        display: flex;
+
+        p{
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "base";
+@import url("https://use.typekit.net/hfu3icp.css");
+@font-face {
+    font-family: 'Garamond-Italic';
+    src: url(../Font/EBGaramond-Italic-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family: 'Garamond';
+    src: url(../Font/EBGaramond-VariableFont_wght.ttf) format("truetype");
+}
+
+@import "LoginPages/login-page";
+@import "LoginPages/signup-page";
+
+@import "../SCSS/HomePages/header";
+@import "../SCSS/HomePages/connection-page";
+@import "../SCSS/HomePages/home-page";
+@import "../SCSS/HomePages/navigation-style";
+@import "../SCSS/HomePages/profile-page";
+@import "../SCSS/HomePages/user-settings";
+
+
+
